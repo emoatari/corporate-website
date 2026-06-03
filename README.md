@@ -41,12 +41,16 @@ This is a fully responsive corporate website template with 5 pages:
 
 3. Customize the content in HTML files and Assets folder
 
+---
+
 📧 Contact
 If you need a similar website for your business, feel free to reach out:
 
 Ponisha: My Profile
 
 Email: moattariehsan@gmail.com
+
+---
 
 📄 License
 Free to use for personal and commercial projects.
