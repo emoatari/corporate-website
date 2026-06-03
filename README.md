@@ -30,7 +30,7 @@
 | Project | Technology | Link |
 |---------|------------|------|
 | Stellux Jewelry Gallery | WordPress | [View](https://stelluxgallery.com) |
-| Corporate Website (TechCorp) | Bootstrap 5 | [View](https://emoatari.github.io/my-portfolio/) |
+| Corporate Website (TechCorp) | Bootstrap 5 | [View]( https://emoatari.github.io/corporate-website/) |
 
 ---
 
