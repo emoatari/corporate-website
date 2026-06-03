@@ -36,3 +36,17 @@ This is a fully responsive corporate website template with 5 pages:
 1. Clone the repository:
    ```bash
    git clone https://github.com/emoatari/corporate-website.git
+   
+2. Open index.html in your browser
+
+3. Customize the content in HTML files and Assets folder
+
+📧 Contact
+If you need a similar website for your business, feel free to reach out:
+
+Ponisha: My Profile
+
+Email: moattariehsan@gmail.com
+
+📄 License
+Free to use for personal and commercial projects.
