@@ -1,45 +1,38 @@
-# Ehsan Moattari - Front-End Developer
+# Corporate Website - TechCorp
 
-**Front-End Developer | WordPress & WooCommerce Specialist | 14 Years Business Experience**
-
----
-
-## About Me
-
-14 years of experience in the power industry and electrical networks, with the last 7 years as an office manager and team coordinator. After learning web development, I decided to combine technical skills with management experience.
-
-- Deep understanding of real business needs
-- Project management and effective communication with clients
-- Commitment to on-time, quality delivery
+**A complete 5-page corporate website built with Bootstrap 5**
 
 ---
 
-## Skills
+## 📌 About This Project
 
-- HTML5 & CSS3
-- Bootstrap 5
-- TailwindCSS
-- JavaScript (currently learning advanced)
-- WordPress
-- Responsive Design
-
----
-
-## Portfolio
-
-| Project | Technology | Link |
-|---------|------------|------|
-| Stellux Jewelry Gallery | WordPress | [View](https://stelluxgallery.com) |
-| Corporate Website (TechCorp) | Bootstrap 5 | [View]( https://emoatari.github.io/corporate-website/) |
+This is a fully responsive corporate website template with 5 pages:
+- **Home** – Hero section, services preview, stats
+- **About** – Company story, team members, skills
+- **Services** – Detailed service cards and pricing tables
+- **Portfolio** – Project gallery with filter and modal details
+- **Contact** – Contact form, info cards, FAQ section
 
 ---
 
-## Contact Me
+## 🛠️ Technologies Used
 
-- **Ponisha:** [My Profile](https://ponisha.ir/profile/fotonehsan)
-- **GitHub:** [emoatari](https://github.com/emoatari)
-- **Email:** moattariehsan@gmail.com
+- HTML5
+- CSS3
+- Bootstrap 5.3
+- Bootstrap Icons
+- JavaScript (for filtering, modals, FAQ toggle)
 
 ---
 
-> 📌 This repository contains my practice projects and real client work.
+## 🚀 Live Demo
+
+👉 [View the live website](https://emoatari.github.io/corporate-website)
+
+---
+
+## 📂 How to Use
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/emoatari/corporate-website.git
