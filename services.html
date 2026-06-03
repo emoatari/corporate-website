@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Our Services | TechCorp</title>
+
+        <!-- Bootstrap 5.3.8 CSS -->
+        <link rel="stylesheet" href="Assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="Assets/css/bootstrap-icons.min.css" />
+
+        <style>
+            :root {
+                --primary: #2563eb;
+                --primary-dark: #1e40af;
+                --secondary: #64748b;
+                --dark: #1e293b;
+                --light: #f8fafc;
+            }
+
+            body {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                color: var(--dark);
+                padding-top: 76px;
+            }
+
+            /* ========== NAVBAR STYLES ========== */
+            .navbar {
+                box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+                background: white !important;
+            }
+            .navbar-brand {
+                font-size: 1.8rem;
+                font-weight: bold;
+                color: var(--primary) !important;
+            }
+
+            .nav-link {
+                font-weight: 500;
+                margin: 0 5px;
+                transition: all 0.3s;
+            }
+
+            .nav-link:hover,
+            .nav-link.active {
+                color: var(--primary) !important;
+            }
+            /* ========== PAGE HEADER ========== */
+            .page-header {
+                background: linear-gradient(
+                    135deg,
+                    var(--primary) 0%,
+                    var(--primary-dark) 100%
+                );
+                color: white;
+                padding: 60px 0;
+                margin-bottom: 60px;
+            }
+
+            /* ========== SERVICE DETAIL CARDS ========== */
+            .service-detail-card {
+                padding: 40px 30px;
+                border-radius: 20px;
+                transition: all 0.3s;
+                border: none;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+                margin-bottom: 30px;
+                height: 100%;
+            }
+            /* ========== PAGE HEADER ========== */
+            .page-header {
+                background: linear-gradient(
+                    135deg,
+                    var(--primary) 0%,
+                    var(--primary-dark) 100%
+                );
+                color: white;
+                padding: 60px 0;
+                margin-bottom: 60px;
+            }
+
+            /* ========== SERVICE DETAIL CARDS ========== */
+            .service-detail-card {
+                padding: 40px 30px;
+                border-radius: 20px;
+                transition: all 0.3s;
+                border: none;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+                margin-bottom: 30px;
+                height: 100%;
+            }
+            .service-detail-card h3 {
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+            }
+
+            .service-features {
+                list-style: none;
+                padding: 0;
+                margin-top: 20px;
+            }
+
+            .service-features li {
+                padding: 8px 0;
+                border-bottom: 1px solid #e2e8f0;
+            }
+
+            .service-features li:last-child {
+                border-bottom: none;
+            }
+            .service-features i {
+                color: var(--primary);
+                margin-right: 10px;
+            }
+
+            /* ========== PRICING SECTION ========== */
+            .pricing-card {
+                text-align: center;
+                padding: 40px 30px;
+                border-radius: 20px;
+                transition: all 0.3s;
+                border: 1px solid #e2e8f0;
+                background: white;
+                margin-bottom: 30px;
+            }
+            .pricing-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+                border-color: transparent;
+            }
+
+            .pricing-card.popular {
+                border: 2px solid var(--primary);
+                position: relative;
+                background: white;
+            }
+            .popular-badge {
+                position: absolute;
+                top: -12px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: var(--primary);
+                color: white;
+                padding: 5px 15px;
+                border-radius: 20px;
+                font-size: 0.8rem;
+                font-weight: bold;
+            }
+
+            .price {
+                font-size: 3rem;
+                font-weight: bold;
+                color: var(--primary);
+                margin: 20px 0;
+            }
+            .price span {
+                font-size: 1rem;
+                color: var(--secondary);
+            }
+
+            /* ========== FOOTER ========== */
+            footer {
+                background: var(--dark);
+                color: white;
+                padding: 60px 0 20px;
+                margin-top: 60px;
+            }
+
+            footer h5 {
+                margin-bottom: 20px;
+                font-size: 1.2rem;
+            }
+            footer a {
+                color: #94a3b8;
+                text-decoration: none;
+                transition: all 0.3s;
+            }
+
+            footer a:hover {
+                color: white;
+            }
+
+            .social-links a {
+                display: inline-block;
+                width: 35px;
+                height: 35px;
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 50%;
+                text-align: center;
+                line-height: 35px;
+                margin-right: 10px;
+                transition: all 0.3s;
+            }
+            .social-links a:hover {
+                background: var(--primary);
+                transform: translateY(-3px);
+            }
+
+            @media (max-width: 768px) {
+                .price {
+                    font-size: 2rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- start navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <i class="bi bi-cpu"></i> TechCorp
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link"
+                                >Services</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a href="portfolio.html" class="nav-link"
+                                >Portfolio</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary ms-lg-3"
+                        >Get Started</a
+                    >
+                </div>
+            </div>
+        </nav>
+        <!-- end navbar -->
+
+        <!-- start Page header -->
+        <section class="page-header">
+            <div class="container text-center">
+                <h1>Our Services</h1>
+                <p class="lead">
+                    Comprehensive technology solutions tailored to your business
+                    needs
+                </p>
+            </div>
+        </section>
+        <!-- end Page header -->
+
+        <!-- start SERVICES DETAILS -->
+        <div class="container">
+            <div class="row">
+                <!-- Service 1: Web Development -->
+                <div class="col-lg-4">
+                    <div class="service-detail-card">
+                        <div class="service-icon-large">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+                        <h3 class="text-center">Web Development</h3>
+                        <p class="text-muted text-center">
+                            Custom websites and web applications built with
+                            modern technologies.
+                        </p>
+                        <ul class="service-features">
+                            <li>
+                                <i class="bi bi-check-circle"></i> Responsive
+                                Design
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i> E-commerce
+                                Solutions
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i> CMS
+                                Development
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i> API
+                                Integration
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i> Performance
+                                Optimization
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Service 2: Mobile Apps -->
+                <div class="col-lg-4">
+                    <div class="service-detail-card">
+                        <div class="service-icon-large">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <h3 class="text-center">Mobile Apps</h3>
+                        <p class="text-muted text-center">
+                            Native and cross-platform mobile applications for
+                            iOS and Android.
+                        </p>
+                        <ul class="service-features">
+                            <li>
+                                <i class="bi bi-check-circle"></i> iOS
+                                Development
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i> Android
+                                Development
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i>
+                                Cross-Platform (React Native)
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i> App Store
+                                Optimization
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i> Maintenance &
+                                Support
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Service 3: Cloud Solutions -->
+                <div class="col-lg-4">
+                    <div class="service-detail-card">
+                        <div class="service-icon-large">
+                            <i class="bi bi-cloud"></i>
+                        </div>
+                        <h3 class="text-center">Cloud Solutions</h3>
+                        <p class="text-muted text-center">
+                            Scalable cloud infrastructure and migration
+                            services.
+                        </p>
+                        <ul class="service-features">
+                            <li>
+                                <i class="bi bi-check-circle"></i>
+                                AWS/Azure/Google Cloud
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i> Cloud
+                                Migration
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i> DevOps &
+                                CI/CD
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i> Serverless
+                                Architecture
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i> 24/7
+                                Monitoring
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Service 4: IT Consulting -->
+                <div class="col-lg-4">
+                    <div class="service-detail-card">
+                        <div class="service-icon-large">
+                            <i class="bi bi-briefcase"></i>
+                        </div>
+                        <h3 class="text-center">IT Consulting</h3>
+                        <p class="text-muted text-center">
+                            Expert advice to help you make informed technology
+                            decisions.
+                        </p>
+                        <ul class="service-features">
+                            <li>
+                                <i class="bi bi-check-circle"></i> Technology
+                                Assessment
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i> Digital
+                                Transformation
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i> IT Strategy
+                                Planning
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i> Security
+                                Audits
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i> Staff
+                                Training
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Service 5: UI/UX Design -->
+                <div class="col-lg-4">
+                    <div class="service-detail-card">
+                        <div class="service-icon-large">
+                            <i class="bi bi-palette"></i>
+                        </div>
+                        <h3 class="text-center">UI/UX Design</h3>
+                        <p class="text-muted text-center">
+                            Beautiful, user-friendly interfaces that delight
+                            your customers.
+                        </p>
+                        <ul class="service-features">
+                            <li>
+                                <i class="bi bi-check-circle"></i> User Research
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i> Wireframing &
+                                Prototyping
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i> UI Design
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i> Usability
+                                Testing
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i> Design
+                                Systems
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Service 6: SEO & Marketing -->
+                <div class="col-lg-4">
+                    <div class="service-detail-card">
+                        <div class="service-icon-large">
+                            <i class="bi bi-graph-up"></i>
+                        </div>
+                        <h3 class="text-center">SEO & Marketing</h3>
+                        <p class="text-muted text-center">
+                            Boost your online presence and reach more customers.
+                        </p>
+                        <ul class="service-features">
+                            <li>
+                                <i class="bi bi-check-circle"></i> Search Engine
+                                Optimization
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i> Content
+                                Marketing
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i> Social Media
+                                Management
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i> Email
+                                Marketing
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i> Analytics &
+                                Reporting
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ========== PRICING SECTION ========== -->
+            <div class="text-center mt-5 mb-5">
+                <h2 class="fw-bold">Simple, Transparent Pricing</h2>
+                <p class="text-muted pt-2 pb-2">
+                    Choose the plan that works best for you
+                </p>
+                <div class="border-bottom w-25 mx-auto"></div>
+            </div>
+            <div class="row align-items-center">
+                <!-- Basic Plan -->
+                <div class="col-lg-4">
+                    <div class="pricing-card">
+                        <h3>Basic</h3>
+                        <div class="price">
+                            $499<span class="ms-2">/month/</span>
+                        </div>
+                        <p class="text-muted">Perfect for small businesses</p>
+                        <hr />
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <span class="bi bi-check"></span> Basic Website
+                            </li>
+                            <li class="mb-2">
+                                <span class="bi bi-check"></span> 5 Pages
+                            </li>
+                            <li class="mb-2">
+                                <span class="bi bi-check"></span> Responsive
+                                Design
+                            </li>
+                            <li class="mb-2">
+                                <span class="bi bi-check"></span> Email Support
+                            </li>
+                            <li class="mb-2 text-muted">
+                                <span class="bi bi-x"></span>SEO Optimization
+                            </li>
+                            <li class="mb-2 text-muted">
+                                <span class="bi bi-x"></span>Analytics
+                            </li>
+                        </ul>
+                        <a
+                            href="contact.html"
+                            class="btn btn-outline-primary w-100 mt-3"
+                            >Get Started</a
+                        >
+                    </div>
+                </div>
+                <!-- Professional Plan (Popular) -->
+                <div class="col-lg-4">
+                    <div class="pricing-card popular">
+                        <div class="popular-badge">
+                            <span class="bi bi-fire"></span> Most Popular
+                        </div>
+                        <h3>Professional</h3>
+                        <div class="price">$999<span>/month</span></div>
+                        <p class="text-muted">Best for growing companies</p>
+                        <hr />
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <span class="bi bi-check"></span> Full Website
+                            </li>
+                            <li class="mb-2">
+                                <span class="bi bi-check"></span> 15+ Pages
+                            </li>
+                            <li class="mb-2">
+                                <span class="bi bi-check"></span> Responsive
+                                Design
+                            </li>
+                            <li class="mb-2">
+                                <span class="bi bi-check"></span> Priority
+                                Support
+                            </li>
+                            <li class="mb-2">
+                                <span class="bi bi-check"></span> SEO
+                                Optimization
+                            </li>
+                            <li class="mb-2">
+                                <span class="bi bi-check"></span> Basic
+                                Analytics
+                            </li>
+                        </ul>
+                        <a
+                            href="contact.html"
+                            class="btn btn-primary w-100 mt-3"
+                            >Get Started</a
+                        >
+                    </div>
+                </div>
+                <!-- Enterprise Plan -->
+                <div class="col-lg-4">
+                    <div class="pricing-card">
+                        <h3>Enterprise</h3>
+                        <div class="price">Custom</div>
+                        <p class="text-muted">For large organizations</p>
+                        <hr />
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <span class="bi bi-check"></span> Everything in
+                                Professional
+                            </li>
+                            <li class="mb-2">
+                                <span class="bi bi-check"></span> Unlimited
+                                Pages
+                            </li>
+                            <li class="mb-2">
+                                <span class="bi bi-check"></span> 24/7 Dedicated
+                                Support
+                            </li>
+                            <li class="mb-2">
+                                <span class="bi bi-check"></span> Advanced
+                                Analytics
+                            </li>
+                            <li class="mb-2">
+                                <span class="bi bi-check"></span> Custom
+                                Features
+                            </li>
+                            <li class="mb-2">
+                                <span class="bi bi-check"></span> SLA Agreement
+                            </li>
+                        </ul>
+                        <a
+                            href="contact.html"
+                            class="btn btn-outline-primary w-100 mt-3"
+                            >Contact Us</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end SERVICES DETAILS -->
+
+        <!-- start CTA SECTION -->
+        <div class="container mb-5 mt-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="bg-light p-5 rounded-4">
+                        <h2 class="fw-bold">Need a Custom Solution?</h2>
+                        <p class="text-muted mb-4 mt-4">
+                            Let's discuss your specific requirements and create
+                            a tailored package for you.
+                        </p>
+                        <a href="contact.html" class="btn btn-primary btn-lg"
+                            >Request a Quote</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end CTA SECTION -->
+
+        <!-- start footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <h5><i class="bi bi-cpu"></i> TechCorp</h5>
+                        <p class="text-secondary">
+                            Providing innovative IT solutions since 2020. We
+                            help businesses grow through technology.
+                        </p>
+                        <div class="social-links">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-4">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <h5>Our Services</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="services.html">Web Development</a></li>
+                            <li><a href="services.html">Mobile Apps</a></li>
+                            <li><a href="services.html">Cloud Solutions</a></li>
+                            <li><a href="services.html">IT Consulting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <h5>Contact Info</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-geo-alt"></i> Tehran, Iran</li>
+                            <li class="pt-2 pb-2">
+                                <i class="bi bi-envelope"></i> info@techcorp.com
+                            </li>
+                            <li>
+                                <i class="bi bi-telephone"></i> +98 21 1234 5678
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="border-secondary" />
+                <div class="text-center text-secondary">
+                    <p class="mb-0">
+                        &copy; 2024 TechCorp. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+
+        <script src="Assets/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Back to Top Button -->
+        <button
+            onclick="scrollToTop()"
+            id="backToTopBtn"
+            class="btn btn-primary rounded-circle position-fixed"
+            style="
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+                display: none;
+                z-index: 99;
+            "
+        >
+            <span class="bi-arrow-up"></span>
+        </button>
+
+        <script>
+            // دکمه بازگشت به بالا
+            window.onscroll = function () {
+                const btn = document.getElementById("backToTopBtn");
+                if (
+                    document.body.scrollTop > 300 ||
+                    document.documentElement.scrollTop > 300
+                ) {
+                    btn.style.display = "block";
+                } else {
+                    btn.style.display = "none";
+                }
+            };
+
+            function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+        </script>
+    </body>
+</html>
