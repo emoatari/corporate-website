@@ -2,9 +2,6 @@
 
 A fully responsive, 5‑page corporate website built with Bootstrap 5 as a practice project to demonstrate front‑end development skills.
 
-![Live Demo Screenshot](assets/TechCorp-home.png)
-![Live Demo Screenshot](assets/TechCorp-portfolio.png)
-
 ---
 
 ## 🚀 Live Demo
@@ -88,6 +85,8 @@ corporate-website/
 
 📸 Screenshots
 
+![Live Demo Screenshot](assets/img/TechCorp-home.png)
+![Live Demo Screenshot](assets/img/TechCorp-portfolio.png)
 ---
 
 🤝 Contributing
