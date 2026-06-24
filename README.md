@@ -55,6 +55,7 @@ The site includes 5 main pages:
 
 ## 📂 Project Structure
 
+```plaintext
 corporate-website/
 ├── index.html
 ├── about.html
@@ -62,13 +63,14 @@ corporate-website/
 ├── portfolio.html
 ├── contact.html
 ├── Assets/
-│ ├── css/
-│ │ └── bootstrap.min.css
-│ ├── js/
-│ │ └── bootstrap.bundle.min.js
-│ └── imgs/
-│ └── (project images)
+│   ├── css/
+│   │   └── bootstrap.min.css
+│   ├── js/
+│   │   └── bootstrap.bundle.min.js
+│   └── imgs/
+│       └── (project images)
 └── README.md
+```
 
 ---
 
