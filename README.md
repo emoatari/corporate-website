@@ -87,8 +87,8 @@ corporate-website/
 
 📸 Screenshots
 
-![Live Demo Screenshot](Assets/imgs/TechCorp-home.png)
-![Live Demo Screenshot](Assets/imgs/TechCorp-portfolio.png)
+![Live Demo Screenshot](assets/imgs/TechCorp-home.png)
+![Live Demo Screenshot](assets/imgs/TechCorp-portfolio.png)
 ---
 
 🤝 Contributing
