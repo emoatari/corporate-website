@@ -3,12 +3,19 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="View TechCorp's portfolio of successful projects including e-commerce platforms, mobile apps, corporate websites, and UI/UX designs. See our work in action."
+        />
         <title>Our Portfolio | TechCorp</title>
 
         <!-- Bootstrap 5.3.8 CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="Assets/css/bootstrap-icons.min.css" />
-        <link rel="stylesheet" href="Assets/css/style.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body>
         <!-- start navbar -->
@@ -95,7 +102,7 @@
                         onclick="showProjectDetails(1)"
                     >
                         <img
-                            src="Assets/imgs/E-Commerce Platform.webp"
+                            src="assets/imgs/E-Commerce Platform.webp"
                             alt="Project(1)"
                             class="portfolio-img"
                             loading="lazy"
@@ -120,7 +127,7 @@
                         onclick="showProjectDetails(2)"
                     >
                         <img
-                            src="Assets/imgs/Fitness Tracking App.webp"
+                            src="assets/imgs/Fitness Tracking App.webp"
                             alt="Project 2"
                             class="portfolio-img"
                             loading="lazy"
@@ -145,7 +152,7 @@
                         onclick="showProjectDetails(3)"
                     >
                         <img
-                            src="Assets/imgs/Banking App Redesign.webp"
+                            src="assets/imgs/Banking App Redesign.webp"
                             class="portfolio-img"
                             alt="Project 3"
                             loading="lazy"
@@ -170,7 +177,7 @@
                         onclick="showProjectDetails(4)"
                     >
                         <img
-                            src="Assets/imgs/Corporate Website.webp"
+                            src="assets/imgs/Corporate Website.webp"
                             class="portfolio-img"
                             alt="Project 4"
                             loading="lazy"
@@ -195,7 +202,7 @@
                         onclick="showProjectDetails(5)"
                     >
                         <img
-                            src="Assets/imgs/Food Delivery App.webp"
+                            src="assets/imgs/Food Delivery App.webp"
                             class="portfolio-img"
                             alt="Project 5"
                             loading="lazy"
@@ -220,7 +227,7 @@
                         onclick="showProjectDetails(6)"
                     >
                         <img
-                            src="Assets/imgs/Dashboard Design.webp"
+                            src="assets/imgs/Dashboard Design.webp"
                             class="portfolio-img"
                             alt="Project 6"
                             loading="lazy"
@@ -299,7 +306,7 @@
                 <div class="col-md-4">
                     <div class="testimonial-card">
                         <img
-                            src="Assets/imgs/client 02.jfif"
+                            src="assets/imgs/client 02.jfif"
                             alt="Client"
                             class="testimonial-img"
                         />
@@ -322,7 +329,7 @@
                 <div class="col-md-4">
                     <div class="testimonial-card">
                         <img
-                            src="Assets/imgs/client 03.jfif"
+                            src="assets/imgs/client 03.jfif"
                             alt="Client"
                             class="testimonial-img"
                         />
@@ -344,7 +351,7 @@
                 <div class="col-md-4">
                     <div class="testimonial-card">
                         <img
-                            src="Assets/imgs/client 01.jfif"
+                            src="assets/imgs/client 01.jfif"
                             alt="Client"
                             class="testimonial-img"
                         />
@@ -448,6 +455,7 @@
         <!-- end footer -->
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/script.js"></script>
 
         <!-- Back to Top Button -->
         <button
@@ -465,116 +473,5 @@
         >
             <span class="bi-arrow-up"></span>
         </button>
-
-        <script>
-            // دکمه بازگشت به بالا
-            window.onscroll = function () {
-                const btn = document.getElementById("backToTopBtn");
-                if (
-                    document.body.scrollTop > 300 ||
-                    document.documentElement.scrollTop > 300
-                ) {
-                    btn.style.display = "block";
-                } else {
-                    btn.style.display = "none";
-                }
-            };
-
-            function scrollToTop() {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-            }
-        </script>
-
-        <script>
-            // Filter functionality
-            const filterButtons = document.querySelectorAll(".filter-btn");
-            const portfolioItems = document.querySelectorAll(".portfolio-item");
-
-            filterButtons.forEach((btn) => {
-                btn.addEventListener("click", () => {
-                    // Update active button
-                    filterButtons.forEach((b) => b.classList.remove("active"));
-                    btn.classList.add("active");
-
-                    // Filter items
-                    const filterValue = btn.getAttribute("data-filter");
-
-                    portfolioItems.forEach((item) => {
-                        if (
-                            filterValue === "all" ||
-                            item.getAttribute("data-category") === filterValue
-                        ) {
-                            item.style.display = "block";
-                        } else {
-                            item.style.display = "none";
-                        }
-                    });
-                });
-            });
-
-            // Project details data
-            const projects = {
-                1: {
-                    title: "E-Commerce Platform",
-                    img: "./Assets/imgs/E-Commerce Platform.webp",
-                    description:
-                        "A fully-featured e-commerce platform with payment gateway integration, inventory management, and customer analytics.",
-                    tech: "React, Node.js, MongoDB, Stripe",
-                    client: "TechStore Inc.",
-                },
-                2: {
-                    title: "Fitness Tracking App",
-                    img: "./Assets/imgs/Fitness Tracking App.webp",
-                    description:
-                        "A comprehensive fitness tracking mobile app with workout plans, nutrition tracking, and progress monitoring.",
-                    tech: "React Native, Firebase, Google Fit API",
-                    client: "FitLife Health",
-                },
-                3: {
-                    title: "Banking App Redesign",
-                    img: "./Assets/imgs/Banking App Redesign.webp",
-                    description:
-                        "Complete UI/UX redesign of a banking application focusing on user experience and accessibility.",
-                    tech: "Figma, Adobe XD, User Testing",
-                    client: "SecureBank",
-                },
-                4: {
-                    title: "Corporate Website",
-                    img: "./Assets/imgs/Corporate Website.webp",
-                    description:
-                        "A modern, responsive corporate website for a Fortune 500 company with CMS integration.",
-                    tech: "WordPress, PHP, MySQL, Bootstrap",
-                    client: "Global Corp",
-                },
-                5: {
-                    title: "Food Delivery App",
-                    img: "./Assets/imgs/Food Delivery App.webp",
-                    description:
-                        "On-demand food delivery app with real-time tracking and payment integration.",
-                    tech: "Flutter, Firebase, Google Maps API",
-                    client: "Foodie Express",
-                },
-                6: {
-                    title: "Dashboard Design",
-                    img: "./Assets/imgs/Dashboard Design.webp",
-                    description:
-                        "An analytics dashboard for business intelligence with interactive charts and reports.",
-                    tech: "React, Chart.js, Material-UI",
-                    client: "DataVision Analytics",
-                },
-            };
-
-            function showProjectDetails(id) {
-                const project = projects[id];
-                document.getElementById("modalTitle").textContent =
-                    project.title;
-                document.getElementById("modalImg").src = project.img;
-                document.getElementById("modalDescription").textContent =
-                    project.description;
-                document.getElementById("modalTech").textContent = project.tech;
-                document.getElementById("modalClient").textContent =
-                    project.client;
-            }
-        </script>
     </body>
 </html>
