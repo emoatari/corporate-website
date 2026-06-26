@@ -44,7 +44,7 @@ filterButtons.forEach((btn) => {
 const projects = {
     1: {
         title: "E-Commerce Platform",
-        img: "./assets/imgs/E-Commerce Platform.webp",
+        img: "../imgs/E-Commerce Platform.webp",
         description:
             "A fully-featured e-commerce platform with payment gateway integration, inventory management, and customer analytics.",
         tech: "React, Node.js, MongoDB, Stripe",
@@ -52,7 +52,7 @@ const projects = {
     },
     2: {
         title: "Fitness Tracking App",
-        img: "./assets/imgs/Fitness Tracking App.webp",
+        img: "../imgs/Fitness Tracking App.webp",
         description:
             "A comprehensive fitness tracking mobile app with workout plans, nutrition tracking, and progress monitoring.",
         tech: "React Native, Firebase, Google Fit API",
@@ -60,7 +60,7 @@ const projects = {
     },
     3: {
         title: "Banking App Redesign",
-        img: "./assets/imgs/Banking App Redesign.webp",
+        img: "../imgs/Banking App Redesign.webp",
         description:
             "Complete UI/UX redesign of a banking application focusing on user experience and accessibility.",
         tech: "Figma, Adobe XD, User Testing",
@@ -68,7 +68,7 @@ const projects = {
     },
     4: {
         title: "Corporate Website",
-        img: "./assets/imgs/Corporate Website.webp",
+        img: "../imgs/Corporate Website.webp",
         description:
             "A modern, responsive corporate website for a Fortune 500 company with CMS integration.",
         tech: "WordPress, PHP, MySQL, Bootstrap",
@@ -76,7 +76,7 @@ const projects = {
     },
     5: {
         title: "Food Delivery App",
-        img: "./assets/imgs/Food Delivery App.webp",
+        img: "../imgs/Food Delivery App.webp",
         description:
             "On-demand food delivery app with real-time tracking and payment integration.",
         tech: "Flutter, Firebase, Google Maps API",
@@ -84,7 +84,7 @@ const projects = {
     },
     6: {
         title: "Dashboard Design",
-        img: "./assets/imgs/Dashboard Design.webp",
+        img: "../imgs/Dashboard Design.webp",
         description:
             "An analytics dashboard for business intelligence with interactive charts and reports.",
         tech: "React, Chart.js, Material-UI",
