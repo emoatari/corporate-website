@@ -62,11 +62,12 @@ corporate-website/
 ├── services.html
 ├── portfolio.html
 ├── contact.html
-├── Assets/
+├── assets/
 │   ├── css/
 │   │   └── bootstrap.min.css
 │   ├── js/
 │   │   └── bootstrap.bundle.min.js
+|   |   └── script.js
 │   └── imgs/
 │       └── (project images)
 └── README.md
